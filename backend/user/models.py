@@ -2,4 +2,5 @@ from django.db import models
 
 
 class User(models.Model):
-    pass
+    login = models.TextField(default="")
+    password = models.TextField(default="")

@@ -1,8 +1,12 @@
 venv
 node_modules
+
 __pycache__
+migrations
+
 secret.py
 db.sqlite3
+
 /.pnp
 .pnp.js
 /coverage
