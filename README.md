@@ -9,3 +9,4 @@ Check the backend, frontend and bot directories. Each of them has its own README
 Also note that the bot and frontend are not connected in any way, but both of them cannot work without a running backend
 
 # How it works
+![Безымянный-2025-04-17-0347](https://github.com/user-attachments/assets/645a4369-c077-4f15-88da-c45eafe04a26)
