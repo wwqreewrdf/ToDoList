@@ -1,13 +1,15 @@
-import Header from './components/Header';
-import Main from './components/Main';
+import Header from './components/Header/Header';
+import LeftMenu from './components/LeftMenu/LeftMenu';
+import Workspace from './components/Workspace/Workspace';
+
+import styles from './index.css'
 
 export default function App() {
   return (
-    <div>
-        
+    <div class="App" style={styles}>
         <Header />
-        <Main />
-
+        <LeftMenu />
+        <Workspace />
     </div>
   );
 }
