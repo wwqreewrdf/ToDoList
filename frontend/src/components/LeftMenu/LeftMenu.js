@@ -21,6 +21,8 @@ export default function LeftMenu() {
 
     return (
         <aside style={styles} id="sidebar">
+            sidebar test
+            
             {users.length > 0 && (
                 <ul>
                     {users.map(user => (
