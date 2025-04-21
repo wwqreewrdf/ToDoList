@@ -1,8 +1,10 @@
 main {
-    background-color: white;
     position: fixed;
     top: 40px;
     left: 240px;
     bottom: 40px;
     right: 0px;
+
+    background-color: white;
+    padding: 20px;
 }

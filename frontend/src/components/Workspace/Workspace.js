@@ -4,7 +4,8 @@ import Group from '../Group/Group'
 export default function Workspace() {
     return (
         <main style={styles}>
-            workspace
+            <p>workspace</p>
+            <Group />
             <Group />
         </main>
     );

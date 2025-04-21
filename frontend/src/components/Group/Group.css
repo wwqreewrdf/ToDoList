@@ -1,0 +1,9 @@
+.group {
+    background-color: aquamarine;
+    display: inline;
+    float: left;
+    width: 200px;
+    height: 500px;
+    border-radius: 20px;
+    margin: 20px;
+}
