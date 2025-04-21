@@ -1,3 +1,8 @@
-.workspace {
-    background-color: brown;
+main {
+    background-color: white;
+    position: fixed;
+    top: 40px;
+    left: 240px;
+    bottom: 40px;
+    right: 0px;
 }

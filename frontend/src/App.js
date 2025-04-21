@@ -1,6 +1,7 @@
 import Header from './components/Header/Header';
 import LeftMenu from './components/LeftMenu/LeftMenu';
 import Workspace from './components/Workspace/Workspace';
+import Footer from './components/Footer/Footer';
 
 import styles from './index.css'
 
@@ -10,6 +11,7 @@ export default function App() {
         <Header />
         <LeftMenu />
         <Workspace />
+        <Footer />
     </div>
   );
 }

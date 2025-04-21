@@ -2,8 +2,8 @@ import styles from './Workspace.css'
 
 export default function Workspace() {
     return (
-        <div class="workspace" style={styles}>
+        <main style={styles}>
             <p>workspace</p>
-        </div>
+        </main>
     );
 }
