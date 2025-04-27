@@ -8,6 +8,6 @@ from todo.urls import todo_patterns
 urlpatterns = [
     path("admin/", admin.site.urls),
 
-    path("user", include(user_patterns)),
-    path("todo", include(todo_patterns))
+    path("user/", include(user_patterns)),
+    path("todo/", include(todo_patterns))
 ]
