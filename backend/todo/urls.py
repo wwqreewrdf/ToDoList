@@ -1,5 +1,7 @@
 from django.urls import path
-from .views import *
+from .todo_view_elements.table import *
+from .todo_view_elements.group import *
+from .todo_view_elements.task import *
 
 todo_patterns = [
     path('table', TablesAPI.as_view()), # tables list (get post patch delete)
