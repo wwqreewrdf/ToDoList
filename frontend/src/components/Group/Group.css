@@ -1,9 +1,10 @@
 .group {
-    background-color: aquamarine;
+    background-color: rgba(92, 196, 196, 0.534);
     display: inline;
     float: left;
     width: 200px;
     height: 500px;
     border-radius: 20px;
+    border: thick double #32a1ce;
     margin: 20px;
 }

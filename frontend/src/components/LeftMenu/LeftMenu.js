@@ -6,7 +6,7 @@ export default function LeftMenu() {
     const [users, setUsers] = useState([])
 
     const fetchData = () => {
-        fetch("https://jsonplaceholder.typicode.com/users")
+        fetch("http://127.0.0.1:8000/todo/table")
             .then(response => {
                 return response.json()
             })

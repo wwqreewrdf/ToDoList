@@ -1,10 +1,13 @@
 main {
-    position: fixed;
+    position: absolute;
     top: 40px;
     left: 240px;
-    bottom: 40px;
     right: 0px;
+    bottom: 40px;
 
-    background-color: white;
+    background-color: rgb(255, 255, 255);
     padding: 20px;
+    background-image: radial-gradient(circle, rgb(203 213 225) 2px, #fff 2px);
+    background-size: 2.5rem 2.5rem;
+    background-position: center center;
 }
