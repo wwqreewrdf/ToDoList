@@ -2,7 +2,10 @@ from django.urls import path
 from .views import *
 
 todo_patterns = [
-    path('table/', TableAPI.as_view()),
-    path('group/', GroupAPI.as_view()),
-    path('task/', TaskAPI.as_view()),
+    path('table', TablesAPI.as_view()), # tables list (get post patch delete)
+    path('table/<int:id>', TableAPI.as_view()), # each table (get) (( if user opened table getting inner table data ))
+    
+    # (post patch delete)
+    path('group', GroupAPI.as_view()), 
+    path('task', TaskAPI.as_view())
 ]
