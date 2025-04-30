@@ -56,8 +56,8 @@ header {
     align-items: center;
 }
 
-.login,
-.signup {
+.login_sl,
+.signup_sl {
     font-size: 22px;
     border: none;
     outline: none;
@@ -128,7 +128,8 @@ header {
     font-size: 18px;
 }
 
-.clkbtn {
+.logbtn,
+.signbtn {
     height: 60px;
     width: 150px;
     border-radius: 50px;
@@ -158,8 +159,8 @@ header {
         margin: 20px auto;
     }
 
-    .login,
-    .signup {
+    .login_sl,
+    .signup_sl {
         font-size: 19px;
     }
 
@@ -194,7 +195,8 @@ header {
         font-size: 15px;
     }
 
-    .clkbtn {
+    .logbtn,
+    .signbtn {
         height: 50px;
         width: 130px;
         font-size: 19px;
@@ -221,8 +223,8 @@ header {
         margin: 20px auto;
     }
 
-    .login,
-    .signup {
+    .login_sl,
+    .signup_sl {
         font-size: 19px;
     }
 
@@ -257,7 +259,8 @@ header {
         font-size: 15px;
     }
 
-    .clkbtn {
+    .logbtn,
+    .signbtn {
         height: 50px;
         width: 130px;
         font-size: 19px;
