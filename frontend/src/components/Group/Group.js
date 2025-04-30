@@ -4,7 +4,7 @@ import styles from './Group.css'
 
 export default function Group() {
     return (
-        <div class="group" style={styles}>
+        <div className="group" style={styles}>
             group
             <Task />
             <Task />

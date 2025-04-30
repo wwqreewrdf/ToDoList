@@ -6,7 +6,7 @@ from rest_framework.response import Response
 
 
 class UserCreate(APIView):
-    
+
     def post(self, request):
         data = request.data
 
@@ -16,9 +16,3 @@ class UserCreate(APIView):
             password=data['password']
         )
         return Response({'post': model_to_dict(new_user)})
-    
-
-class UserLogin(APIView):
-
-    def post(self, request):
-        pass

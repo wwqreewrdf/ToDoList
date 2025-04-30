@@ -1,6 +1,5 @@
 import styles from './Workspace.css'
 import Group from '../Group/Group'
-import React, { useState, useEffect } from 'react';
 
 
 export default function Workspace() {
@@ -8,7 +7,7 @@ export default function Workspace() {
         <main style={styles}>
             <p>workspace</p>
             <ul>
-                element
+                
             </ul>
             <Group />
             <Group />
