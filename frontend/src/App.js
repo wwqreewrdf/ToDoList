@@ -5,6 +5,7 @@ import Footer from './components/Footer/Footer';
 
 import styles from './index.css'
 
+
 export default function App() {
   return (
     <div class="App" style={styles}>

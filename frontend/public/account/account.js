@@ -6,6 +6,7 @@ let signbtn = document.querySelector(".signbtn");
 let logbtn = document.querySelector(".logbtn");
 let formSection = document.querySelector(".form-section")
 
+
 signup_sl.addEventListener("click", () => {
     slider.classList.add("moveslider");
     formSection.classList.add("form-section-move");
@@ -26,9 +27,9 @@ function Login(login, password) {
             "password": password
         })
     })
-        .then(res => res.json())
-        .then(data => console.log('Успешно:', data))
-        .catch(error => console.error('Ошибка:', error));
+    .then(res => res.json())
+    .then(data => console.log('Успешно:', data))
+    .catch(error => console.error('Ошибка:', error));
 }
 
 function Signup(login, email, password) {
@@ -42,13 +43,12 @@ function Signup(login, email, password) {
             "password": password
         })
     })
-        .then(res => res.json())
-        .then(data => console.log('Успешно:', data))
-        .catch(error => console.error('Ошибка:', error));
+    .then(res => res.json())
+    .then(data => console.log('Успешно:', data))
+    .catch(error => console.error('Ошибка:', error));
 }
 
 signbtn.addEventListener("click", () => {
-
     var input_s_l = document.getElementById("input_signup_login").value
     var input_s_e = document.getElementById("input_signup_email").value
     var input_s_p = document.getElementById("input_signup_password").value
@@ -57,7 +57,6 @@ signbtn.addEventListener("click", () => {
 })
 
 logbtn.addEventListener("click", () => {
-
     var input_l_l = document.getElementById("input_login_login").value
     var input_l_p = document.getElementById("input_login_password").value
 

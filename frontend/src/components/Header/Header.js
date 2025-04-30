@@ -1,5 +1,6 @@
 import styles from './Header.css'
 
+
 export default function Header() {
     return (
         <header style={styles}>
@@ -9,7 +10,6 @@ export default function Header() {
                     account
                 </p>
             </a>
-
         </header>
     );
 }
