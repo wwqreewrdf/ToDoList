@@ -24,6 +24,7 @@ function refresh_check() {
         .then((data) => {
             if (data["code"] == "token_not_valid") {
                 window.location = 'http://127.0.0.1:3000/account.html'
+                console.log("refresh_token_not_valid")
             } else {
             localStorage.setItem('access', data["access"]);
             document.cookie = `refresh=${data["refresh"]};`;
@@ -46,6 +47,7 @@ function access_check() {
         .then(res => res.json())
         .then((data) => {
             if (data["code"] == "token_not_valid") {
+                console.log("access_token_not_valid: checking refsresh")
                 refresh_check()
             }
         })
