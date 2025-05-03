@@ -27,8 +27,9 @@ function refresh_check() {
                 window.location = 'http://127.0.0.1:3000/account.html'
                 console.log("refresh_token_not_valid")
             } else {
-            localStorage.setItem('access', data["access"]);
-            document.cookie = `refresh=${data["refresh"]};`;
+                localStorage.setItem('access', data["access"]);
+                document.cookie = `refresh=${data["refresh"]};`;
+                window.location.reload();
             };
         })
 }

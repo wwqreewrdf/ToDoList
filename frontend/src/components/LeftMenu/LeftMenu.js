@@ -26,7 +26,7 @@ export default function LeftMenu() {
             {tables.length > 0 && (
                 <ul>
                     {tables.map(table => (
-                        <li id={table.id} key={table.id}>{table.name}</li>
+                        <li key={table.id}><a href={`${"http://127.0.0.1:3000/todo/table/"}${table.id}`}>{table.name}</a></li>
                     ))}
                 </ul>
             )}
