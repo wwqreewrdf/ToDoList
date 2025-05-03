@@ -1,5 +1,5 @@
 main {
-    position: absolute;
+    position: fixed;
     top: 40px;
     left: 240px;
     right: 0px;

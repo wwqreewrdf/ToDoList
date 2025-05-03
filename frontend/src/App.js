@@ -13,11 +13,12 @@ function getCookie(name) {
 
 function refresh_check() {
     var refresh = getCookie("refresh");
-    fetch('http://127.0.0.1:8000/user/refresh/', {
+    console.log(refresh)
+    fetch('http://127.0.0.1:8000/user/refresh', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
-            "token": refresh
+            "refresh": refresh
         })
     })
         .then(res => res.json())
@@ -37,7 +38,7 @@ function access_check() {
     if (access == null) {
         window.location = 'http://127.0.0.1:3000/account.html'
     }
-    fetch('http://127.0.0.1:8000/user/verify/', {
+    fetch('http://127.0.0.1:8000/user/verify', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({

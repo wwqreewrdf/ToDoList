@@ -4,31 +4,29 @@ import React, { useState, useEffect } from 'react';
 
 export default function LeftMenu() {
 
-
-    const [users, setUsers] = useState([])
-
-    const fetchData = () => {
-        fetch("https://jsonplaceholder.typicode.com/users")
-            .then(response => {
-                return response.json()
-            })
-            .then(data => {
-                setUsers(data)
-            })
-    }
+    const [tables, setTables] = useState([]);
 
     useEffect(() => {
-        fetchData()
-    }, [])
-
+        fetch('http://127.0.0.1:8000/todo/table', {
+            method: 'GET',
+            headers: {
+                'Content-Type': 'application/json',
+                'Authorization': 'Bearer ' + localStorage["access"]
+            },
+        })
+            .then(res => res.json())
+            .then((data) => {
+                setTables(data["tables"]);
+            });
+    }, []); 
 
     return (
         <aside style={styles} id="sidebar">
             sidebar test
-            {users.length > 0 && (
+            {tables.length > 0 && (
                 <ul>
-                    {users.map(user => (
-                        <li key={user.id}>{user.name}</li>
+                    {tables.map(table => (
+                        <li id={table.id} key={table.id}>{table.name}</li>
                     ))}
                 </ul>
             )}
