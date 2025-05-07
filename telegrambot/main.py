@@ -12,7 +12,7 @@ from data import *
 
 
 logging.basicConfig(level=logging.INFO)
-bot = Bot("7799584237:AAG_XF_Ol3MjPkagzlMIo_AleQ4bzEuH56c")
+bot = Bot("token")
 dp = Dispatcher()
 
 
